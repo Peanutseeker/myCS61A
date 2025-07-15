@@ -1,0 +1,18 @@
+[project]
+name = "cs61a-ucb"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.6"
+dependencies = []
+license = { text = "MIT" }
+
+
+[build-system]
+# 标准的构建系统配置，告诉 pip 如何打包你的项目
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+# 自动发现项目中的所有包 (通常是含 __init__.py 的目录)
+where = ["src"]  # 假设你的代码放在 'src' 目录下
